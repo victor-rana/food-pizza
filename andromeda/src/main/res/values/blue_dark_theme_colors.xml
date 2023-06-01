@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fill colors -->
+    <color name="fill_active_primary_dark">#8c2962FF</color>
+    <color name="fill_active_secondary_dark">#FF0D47A1</color>
+    <color name="fill_inactive_primary_dark">#FF8E8E8E</color>
+    <color name="fill_inactive_secondary_dark">#FF363434</color>
+    <color name="fill_error_primary_dark">#FFFF323D</color>
+    <color name="fill_error_secondary_dark">#FF210001</color>
+    <color name="fill_mute_primary_dark">#FF606161</color>
+    <color name="fill_mute_secondary_dark">#FF242525</color>
+    <color name="fill_background_primary_dark">#FF1C1D1D</color>
+    <color name="fill_background_secondary_dark">#FF333434</color>
+    <color name="fill_background_tertiary_dark">#FFFFFFFF</color>
+    <color name="fill_pressed_dark">#1AFFFFFF</color>
+
+    <!-- Border colors -->
+    <color name="border_active_dark">#8c2962FF</color>
+    <color name="border_pressed_dark">#1AFFFFFF</color>
+    <color name="border_inactive_dark">#FF8E8E8E</color>
+    <color name="border_static_white_dark">#FFFFFFFF</color>
+    <color name="border_focus_dark">#FF777777</color>
+    <color name="border_error_dark">#FFFF323D</color>
+    <color name="border_mute_primary_dark">#FF606161</color>
+
+    <!-- Icon colors -->
+    <color name="icon_static_black_dark">#FF1C1D1D</color>
+    <color name="icon_static_white_dark">#FFFFFFFF</color>
+    <color name="icon_static_inactive_dark">#FF606161</color>
+    <color name="icon_dynamic_default_dark">#FFFFFFFF</color>
+    <color name="icon_dynamic_active_dark">#8c2962FF</color>
+    <color name="icon_dynamic_inactive_dark">#FF606161</color>
+    <color name="icon_dynamic_inverted_dark">#FF1C1D1D</color>
+    <color name="icon_dynamic_error_dark">#FFFF323D</color>
+
+    <!-- Font colors -->
+    <color name="font_default_dark">#FFFFFFFF</color>
+    <color name="font_active_dark">#8c2962FF</color>
+    <color name="font_inactive_dark">#FF8E8E8E</color>
+    <color name="font_error_dark">#FFFF323D</color>
+    <color name="font_static_white_dark">#FFFFFFFF</color>
+    <color name="font_inverted_dark">#FF1C1D1D</color>
+</resources>

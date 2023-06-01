@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AndromedaEditText">
+        <attr name="text" />
+        <attr name="hint" format="string" />
+        <attr name="icon_name" />
+        <attr name="icon_color_token" />
+        <attr name="mandatory" format="boolean" />
+        <attr name="icon_position" format="enum">
+            <enum name="start" value="0" />
+            <enum name="end" value="1" />
+        </attr>
+        <attr name="helperText" format="string" />
+        <attr name="limit" format="integer" />
+        <attr name="showLimit" format="boolean" />
+        <attr name="errorText" format="string" />
+        <attr name="errorColor" format="color" />
+        <attr name="mode" format="enum">
+            <enum name="edit" value="0" />
+            <enum name="read_only" value="1" />
+        </attr>
+        <attr name="style" format="enum">
+            <enum name="outlined" value="0" />
+            <enum name="normal" value="1" />
+        </attr>
+
+        <attr name="inputTextType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="name" value="1" />
+            <enum name="email" value="2" />
+            <enum name="phone" value="3" />
+            <enum name="number" value="4" />
+            <enum name="password" value="5" />
+            <enum name="decimal" value="6" />
+            <enum name="numberPassword" value="7" />
+        </attr>
+    </declare-styleable>
+</resources>

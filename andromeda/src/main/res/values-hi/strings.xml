@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pin_matched">पिन का मिलान हुआ!</string>
+    <string name="pin_incorrect">गलत पिन!</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <!-- Add defaults here -->
+    <entry>
+        <key>is_login_mocked</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>is_landing_mocked</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>is_FoodItem_details_flow_mocked</key>
+        <value>false</value>
+    </entry>
+</defaultsMap>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Food App</string>
+    <string name="arrow_left">left point arrow</string>
+    <string name="arrow_forward">arrow forward</string>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AndromedaBadge">
+        <attr name="badge_text" />
+        <attr name="show_stroke" format="boolean" />
+        <attr name="accessibility_description" />
+    </declare-styleable>
+</resources>

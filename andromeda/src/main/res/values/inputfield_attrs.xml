@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AndromedaInputField">
+        <attr name="label" />
+        <attr name="inputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="name" value="1" />
+            <enum name="email" value="2" />
+            <enum name="phone" value="3" />
+            <enum name="number" value="4" />
+            <enum name="password" value="5" />
+            <enum name="decimal" value="6" />
+            <enum name="numberPassword" value="7" />
+        </attr>
+        <attr name="inputField_type" format="enum">
+            <enum name="input_field_regular" value="0" />
+            <enum name="input_field_large" value="1" />
+        </attr>
+        <attr name="required" format="boolean" />
+    </declare-styleable>
+</resources>

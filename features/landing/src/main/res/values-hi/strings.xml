@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="label_bottom_nav_today">आज</string>
+    <string name="label_bottom_nav_leads">सुराग</string>
+    <string name="label_bottom_nav_alerts">अलर्ट</string>
+    <string name="label_bottom_nav_more">अधिक</string>
+</resources>

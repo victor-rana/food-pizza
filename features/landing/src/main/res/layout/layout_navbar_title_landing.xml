@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navbar_title_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <co.app.food.andromeda.icons.AndromedaIconView
+            android:id="@+id/timeIcon"
+            android:layout_width="27dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="?attr/spacing_2x"
+            android:layout_marginTop="?attr/spacing_2x"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:icon_name="time_day_sunrise"
+            tools:ignore="ContentDescription" />
+
+    <co.app.food.andromeda.text.AndromedaTextView
+            android:id="@+id/atvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/timeIcon"
+            app:layout_constraintTop_toTopOf="@+id/timeIcon"
+            app:typographyStyle="body_moderate_default"
+            android:layout_marginHorizontal="?attr/spacing_2x"
+            tools:text="12th Sept 2021" />
+
+    <co.app.food.andromeda.text.AndromedaTextView
+            android:id="@+id/atvDayGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="?attr/spacing_x"
+            app:layout_constraintTop_toBottomOf="@+id/timeIcon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:typographyStyle="title_moderate_bold_default"
+            android:layout_marginHorizontal="?attr/spacing_2x"
+            tools:text="Good Morning" />
+</androidx.constraintlayout.widget.ConstraintLayout>

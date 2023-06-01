@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Fill colors -->
+    <color name="fill_active_primary_light">#2196F3</color>
+    <color name="fill_active_secondary_light">#FFFFFF</color>
+    <color name="fill_inactive_primary_light">#F3F3F3</color>
+    <color name="fill_inactive_secondary_light">#FFEDEDED</color>
+    <color name="fill_error_primary_light">#FFEA001F</color>
+    <color name="fill_error_secondary_light">#FFFFF8F8</color>
+    <color name="fill_mute_primary_light">#FFE8E8E8</color>
+    <color name="fill_mute_secondary_light">#FFFAFAFA</color>
+    <color name="fill_background_primary_light">#FFFFFFFF</color>
+    <color name="fill_background_secondary_light">#FFFFFFFF</color>
+    <color name="fill_background_tertiary_light">#FF1C1D1D</color>
+    <color name="fill_pressed_light">#1A000000</color>
+    <color name="fill_card_light">#E9F5FE</color>
+    <color name="fill_card_dark">#2196F3</color>
+
+    <!-- Border colors -->
+    <color name="border_active_light">#FF2962FF</color>
+    <color name="border_pressed_light">#1A000000</color>
+    <color name="border_inactive_light">#FFBBBBBB</color>
+    <color name="border_static_white_light">#FFFFFFFF</color>
+    <color name="border_focus_light">#FF1C1D1D</color>
+    <color name="border_error_light">#FFEA001F</color>
+    <color name="border_mute_primary_light">#FFE8E8E8</color>
+
+    <!-- Icon colors -->
+    <color name="icon_static_black_light">#FF1C1D1D</color>
+    <color name="icon_static_white_light">#FFFFFFFF</color>
+    <color name="icon_static_inactive_light">#FF606161</color>
+    <color name="icon_dynamic_default_light">#FF494A4A</color>
+    <color name="icon_dynamic_active_light">#8c2962FF</color>
+    <color name="icon_dynamic_inactive_light">#FF606161</color>
+    <color name="icon_dynamic_inverted_light">#FF1C1D1D</color>
+    <color name="icon_dynamic_error_light">#FFFF323D</color>
+
+    <!-- Font colors -->
+    <color name="font_default_light">#003366</color>
+    <color name="font_active_light">#0D47A1</color>
+    <color name="font_inactive_light">#FF727272</color>
+    <color name="font_error_light">#FFEA001F</color>
+    <color name="font_static_white_light">#FFFFFFFF</color>
+    <color name="font_inverted_light">#FFFFFFFF</color>
+</resources>

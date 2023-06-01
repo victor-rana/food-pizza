@@ -1,0 +1,102 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "c08312acfa3b0a291675e000e6667dd2",
+    "entities": [
+      {
+        "tableName": "crusts",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`FoodItemId` INTEGER NOT NULL, `name` TEXT NOT NULL, `defaultSize` INTEGER NOT NULL, `sizes` TEXT NOT NULL, PRIMARY KEY(`FoodItemId`))",
+        "fields": [
+          {
+            "fieldPath": "FoodItemId",
+            "columnName": "FoodItemId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultSize",
+            "columnName": "defaultSize",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sizes",
+            "columnName": "sizes",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "FoodItemId"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "food_details",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`Id` TEXT NOT NULL, `name` TEXT NOT NULL, `isVeg` INTEGER NOT NULL, `description` TEXT NOT NULL, `defaultCrust` INTEGER NOT NULL, `crusts` TEXT NOT NULL, PRIMARY KEY(`Id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "Id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isVeg",
+            "columnName": "isVeg",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultCrust",
+            "columnName": "defaultCrust",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "crusts",
+            "columnName": "crusts",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "Id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'c08312acfa3b0a291675e000e6667dd2')"
+    ]
+  }
+}

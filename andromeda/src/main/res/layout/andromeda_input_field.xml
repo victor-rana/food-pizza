@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/input_field_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/input_field_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/input_field_error"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <co.app.food.andromeda.text.AndromedaTextView
+            android:id="@+id/input_field_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:typographyStyle="title_moderate_bold_active"
+            tools:text="Label" />
+
+        <co.app.food.andromeda.text.AndromedaTextView
+            android:id="@+id/input_field_required_marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="?attr/spacing_x"
+            android:contentDescription="@string/accessibilityMandatoryInput"
+            android:textSize="16sp"
+            android:text="*"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/input_field_label"
+            app:layout_constraintTop_toTopOf="@id/input_field_label"
+            app:typographyStyle="title_moderate_bold_active"
+            tools:ignore="HardcodedText"
+            tools:visibility="visible" />
+
+        <FrameLayout
+            android:id="@+id/input_field_edit_text_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/spacing_x"
+            android:paddingBottom="?attr/spacing_x"
+            app:layout_constraintEnd_toStartOf="@+id/input_drawable_right"
+            app:layout_constraintStart_toEndOf="@+id/input_drawable_left"
+            app:layout_constraintTop_toBottomOf="@id/input_field_label" />
+
+        <ImageView
+            android:id="@+id/input_field_clear"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:alpha="0"
+            android:contentDescription="@string/accessibilityClear"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="@id/input_field_edit_text_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/input_field_edit_text_container"
+            app:srcCompat="@drawable/andromeda_ic_clear"
+            tools:ignore="ContentDescription"
+            tools:visibility="visible" />
+
+        <co.app.food.andromeda.icons.AndromedaIconView
+            android:id="@+id/input_drawable_left"
+            android:layout_width="24dp"
+            android:layout_marginBottom="8dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="?attr/spacing_2x"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/input_field_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/input_field_line"
+            tools:ignore="ContentDescription" />
+
+        <co.app.food.andromeda.icons.AndromedaIconView
+            android:id="@+id/input_drawable_right"
+            android:layout_width="24dp"
+            android:layout_height="0dp"
+            android:scaleType="center"
+            android:layout_marginRight="?attr/spacing_2x"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:icon_name="arrow_right"
+            app:icon_color_token="?attr/fill_active_primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <View
+            android:id="@+id/input_field_line"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?attr/fill_mute_primary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <co.app.food.andromeda.icons.AndromedaIconView
+            android:id="@+id/input_pwd_visibility_off"
+            android:layout_width="24dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="center"
+            android:layout_marginRight="?attr/spacing_2x"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:icon_name="pwd_visibility_off"
+            app:icon_color_token="?attr/fill_active_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/input_field_line"
+            tools:ignore="ContentDescription" />
+
+        <co.app.food.andromeda.icons.AndromedaIconView
+            android:id="@+id/input_pwd_visibility_on"
+            android:layout_width="24dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="center"
+            android:layout_marginRight="?attr/spacing_2x"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="invisible"
+            tools:visibility="visible"
+            app:icon_name="pwd_visibility_on"
+            app:icon_color_token="?attr/fill_active_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/input_field_line"
+            tools:ignore="ContentDescription" />
+
+        <co.app.food.andromeda.text.AndromedaTextView
+            android:id="@+id/input_counter"
+            android:layout_width="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/input_field_line"
+            app:layout_constraintTop_toBottomOf="@+id/input_field_line"
+            app:typographyStyle="caption_moderate_book_active"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Space
+        android:id="@+id/input_field_error_text_space"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_field_content" />
+
+    <co.app.food.andromeda.text.AndromedaTextView
+        android:id="@+id/input_field_error"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/spacing_x"
+        android:layout_marginBottom="?attr/spacing_x"
+        android:focusable="true"
+        android:minHeight="16dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/input_field_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/input_field_error_text_space"
+        app:layout_constraintTop_toBottomOf="@id/input_field_content"
+        app:typographyStyle="body_moderate_error"
+        tools:text="Error message!!!!" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

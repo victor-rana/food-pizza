@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.library'
+}
+apply from: '../dependencies.gradle'
+apply from: '../common-plugins.gradle'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "String", "BASE_URL", api_debug
+            buildConfigField "String", "API_PROVIDER", api_provider_debug
+            buildConfigField "String", "CLIENT_SECRET", client_secret_debug
+            buildConfigField "String", "CLIENT_ID", client_id_debug
+            buildConfigField "String", "LOGIN_PWD_SECRET", secret_login_password_key
+        }
+        release {
+            buildConfigField "String", "BASE_URL", api_release
+            buildConfigField "String", "API_PROVIDER", api_provider_release
+            buildConfigField "String", "CLIENT_SECRET", client_secret_release
+            buildConfigField "String", "CLIENT_ID", client_id_release
+            buildConfigField "String", "LOGIN_PWD_SECRET", secret_login_password_key
+
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    api kotlin
+    kapt compilers
+    api gson
+    api rx
+    api network
+    api hilt
+    api androidX
+    api firebase
+    implementation loggingLibs
+
+    debugApi "com.github.chuckerteam.chucker:library:3.4.0"
+    releaseApi "com.github.chuckerteam.chucker:library-no-op:3.4.0"
+}

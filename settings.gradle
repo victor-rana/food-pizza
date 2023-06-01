@@ -1,0 +1,10 @@
+include ':app'
+include ':common'
+include ':core'
+include ':andromeda'
+include ':landing'
+include ':configs'
+
+project(":landing").projectDir = new File(rootDir, "features/landing")
+
+rootProject.name = "food"

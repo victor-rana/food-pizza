@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardRootViewGroup">
+        <attr name="measure_on_no_layout_change" format="boolean" />
+    </declare-styleable>
+</resources>

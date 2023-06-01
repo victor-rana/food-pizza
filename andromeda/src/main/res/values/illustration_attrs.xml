@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AndromedaIllustrationView">
+        <attr name="illustration_name" />
+    </declare-styleable>
+
+    <attr name="illustration_name" format="enum">
+        <enum name="onboarding_spot_1" value="0" />
+        <enum name="onboarding_spot_2" value="1" />
+        <enum name="onboarding_spot_3" value="2" />
+        <enum name="device_verification_processing" value="3" />
+        <enum name="device_verification_rejected" value="4" />
+    </attr>
+</resources>

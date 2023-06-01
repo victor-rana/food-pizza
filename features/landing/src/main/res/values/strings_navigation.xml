@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="route_today" translatable="false">Today</string>
+    <string name="route_collections" translatable="false">Leads</string>
+    <string name="route_alerts" translatable="false">Alerts</string>
+    <string name="route_more" translatable="false">More</string>
+
+    <string name="label_bottom_nav_today">Today</string>
+    <string name="label_bottom_nav_leads">Leads</string>
+    <string name="label_bottom_nav_alerts">Alerts</string>
+    <string name="label_bottom_nav_more">More</string>
+</resources>

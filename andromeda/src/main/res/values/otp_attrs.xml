@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AndromedaPinField">
+        <attr name="pin_length" format="integer" />
+        <attr name="pin_value" format="integer" />
+    </declare-styleable>
+</resources>

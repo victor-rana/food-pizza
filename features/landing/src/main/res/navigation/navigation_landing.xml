@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/landing_navigation"
+        app:startDestination="@id/firstTab"
+        android:label="@string/app_name"
+        tools:ignore="InvalidNavigation">
+
+    <fragment
+            android:id="@+id/firstTab"
+            android:name="co.app.food.tabs.presentation.TabFragment"
+            tools:layout="@layout/fragment_tab">
+      <!--  <argument
+                android:name="tab_args"
+                app:argType="co.app.food.landing.model.TabArgs"
+                android:defaultValue="true"
+                app:nullable="false" />-->
+    </fragment>
+
+    <fragment
+            android:id="@+id/secondTab"
+            android:name="co.app.food.tabs.presentation.TabFragment"
+            tools:layout="@layout/fragment_tab">
+       <!-- <argument
+                android:name="tab_args"
+                app:argType="co.app.food.landing.model.TabArgs"
+                android:defaultValue="true"
+                app:nullable="false" />-->
+    </fragment>
+
+    <fragment
+            android:id="@+id/thirdTab"
+            android:name="co.app.food.tabs.presentation.TabFragment"
+            tools:layout="@layout/fragment_tab">
+     <!--   <argument
+                android:name="tab_args"
+                app:argType="co.app.food.landing.model.TabArgs"
+                android:defaultValue="true"
+                app:nullable="false" />-->
+    </fragment>
+
+    <fragment
+            android:id="@+id/fourthTab"
+            android:name="co.app.food.tabs.presentation.TabFragment"
+            tools:layout="@layout/fragment_tab">
+       <!-- <argument
+                android:name="tab_args"
+                app:argType="co.app.food.tabs.model.TabArgs"
+                android:defaultValue="true"
+                app:nullable="false" />-->
+    </fragment>
+
+    <deepLink app:uri="food://home" />
+
+</navigation>

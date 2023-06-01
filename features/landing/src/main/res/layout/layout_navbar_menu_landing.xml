@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<co.app.food.andromeda.shadow.AndromedaShadowLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navbar_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:enable_shadow_left="true"
+        app:enable_shadow_right="true"
+        app:enable_shadow_top="true"
+        app:shadow_enabled="true"
+        app:sl_type="high">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="?attr/spacing_2x"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_menu_icon"
+            tools:ignore="MissingDefaultResource">
+
+        <co.app.food.andromeda.icons.AndromedaIconView
+                android:layout_width="24dp"
+                android:id="@+id/icon_profile"
+                android:layout_height="24dp"
+                app:icon_name="profile"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:icon_color_token="?attr/fill_active_primary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</co.app.food.andromeda.shadow.AndromedaShadowLayout>

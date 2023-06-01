@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibilityImage">Image</string>
+    <string name="accessibilityButtonLoadingText">Loading</string>
+    <string name="accessibilityNavigateBack">Back</string>
+    <string name="accessibilityMandatoryInput">Mandatory Input Field</string>
+    <string name="accessibilityClear">Clear</string>
+    <string name="accessibilityDismiss">Dismiss</string>
+    <string name="accessibilityCardControl">Card Control</string>
+    <string name="accessibilityExpand">Expand</string>
+    <string name="accessibilityMinimize">Minimize</string>
+    <string name="rupeeSymbol" translatable="false">₹</string>
+</resources>

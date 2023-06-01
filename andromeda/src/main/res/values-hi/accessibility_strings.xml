@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibilityImage">छवि</string>
+    <string name="accessibilityButtonLoadingText">लोड हो रहा है</string>
+    <string name="accessibilityNavigateBack">वापस</string>
+    <string name="accessibilityMandatoryInput">अनिवार्य इनपुट फील्ड</string>
+    <string name="accessibilityClear">स्पष्ट</string>
+    <string name="accessibilityDismiss">खारिज</string>
+    <string name="accessibilityCardControl">कार्ड नियंत्रण</string>
+    <string name="accessibilityExpand">विस्तार करना</string>
+    <string name="accessibilityMinimize">छोटा करना</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<co.app.food.andromeda.card.internal.CardRootViewGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/fill_background_tertiary"
+    android:paddingTop="?attr/spacing_4x">
+
+    <LinearLayout
+        android:id="@+id/card_content_container_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <co.app.food.andromeda.button.AndromedaCircularButton
+            android:id="@+id/dialog_card_dismiss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="?attr/spacing_2x"
+            android:visibility="gone"
+            app:accessibility_description="@string/accessibilityDismiss"
+            app:circular_btn_type="circular_secondary_regular"
+            app:icon_color_token="?attr/icon_dynamic_default"
+            app:icon_name="cancel" />
+
+        <co.app.food.andromeda.shadow.AndromedaShadowLayout
+            android:id="@+id/card_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:corner_radius="16dp"
+            app:enable_shadow_bottom="false"
+            app:sl_type="high">
+
+            <co.app.food.andromeda.card.internal.CardContentContainer
+                android:id="@+id/card_content_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingTop="?attr/spacing_4x" />
+
+        </co.app.food.andromeda.shadow.AndromedaShadowLayout>
+
+    </LinearLayout>
+
+</co.app.food.andromeda.card.internal.CardRootViewGroup>

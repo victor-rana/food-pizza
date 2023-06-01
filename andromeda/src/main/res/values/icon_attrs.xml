@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="icon_name" format="enum">
+        <enum name="alerts" value="0" />
+        <enum name="navigation_back" value="1" />
+        <enum name="navigation_cancel" value="2" />
+        <enum name="share" value="3" />
+        <enum name="switch_theme" value="4" />
+        <enum name="navigation_options" value="5" />
+        <enum name="navigation_overflow" value="6" />
+        <enum name="search" value="7" />
+        <enum name="lock" value="8" />
+        <enum name="password" value="9" />
+        <enum name="arrow_right" value="10" />
+        <enum name="more" value="11" />
+        <enum name="add" value="12" />
+        <enum name="collections" value="13" />
+        <enum name="today" value="14" />
+        <enum name="time_day_sunrise" value="15" />
+        <enum name="profile" value="16" />
+        <enum name="pwd_visibility_on" value="17"/>
+        <enum name="pwd_visibility_off" value="18"/>
+        <enum name="cancel" value="19"/>
+        <enum name="grid" value="20"/>
+        <enum name="progress_sync" value="21"/>
+        <enum name="map_arrow" value="22"/>
+        <enum name="refresh" value="23"/>
+        <enum name="filter" value="24"/>
+        <enum name="undone_task" value="25"/>
+        <enum name="present" value="26"/>
+        <enum name="absent" value="27"/>
+    </attr>
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="?attr/spacing_4x"
+        app:cardBackgroundColor="#F5FAFE"
+        app:cardElevation="?attr/spacing_x"
+        android:layout_width="@dimen/card_collections_width"
+        android:layout_height="@dimen/card_collections_height">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <co.app.food.andromeda.icons.AndromedaIconView
+                android:id="@+id/aiv_heading"
+                android:layout_width="?attr/spacing_16x"
+                android:layout_height="?attr/spacing_16x"
+                android:background="@drawable/circle_bg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/andromeda_icon_dummy_avatar_1"
+                android:layout_marginTop="?attr/spacing_4x" />
+
+        <co.app.food.andromeda.text.AndromedaTextView
+                android:id="@+id/atv_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/aiv_heading"
+                android:layout_marginTop="?attr/spacing_5x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:typographyStyle="title_moderate_bold_active"
+                android:gravity="center"
+                android:text="You’re just\nbeginning Collections!"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/startEdgeGuideline"
+                app:layout_constraintGuide_begin="?attr/spacing_4x"
+                android:orientation="vertical" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/endEdgeGuideline"
+                app:layout_constraintGuide_end="?attr/spacing_4x"
+                android:orientation="vertical" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FoodItemGuideline"
+                app:layout_constraintGuide_percent="0.5"
+                android:orientation="vertical" />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/halfHorizontalGuideline"
+                app:layout_constraintGuide_percent="0.5"
+                android:orientation="horizontal" />
+
+        <co.app.food.andromeda.text.AndromedaTextView
+                android:id="@+id/atv_FoodItem_count_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/halfHorizontalGuideline"
+                android:layout_marginTop="?attr/spacing_4x"
+                app:layout_constraintStart_toStartOf="@id/startEdgeGuideline"
+                app:layout_constraintEnd_toEndOf="@id/FoodItemGuideline"
+                app:typographyStyle="body_small_default"
+                android:gravity="center"
+                android:text="8" />
+
+        <co.app.food.andromeda.text.AndromedaTextView
+                android:id="@+id/atv_FoodItem_count_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/atv_FoodItem_count_value"
+                android:layout_marginTop="?attr/spacing_x"
+                app:layout_constraintStart_toStartOf="@id/startEdgeGuideline"
+                app:layout_constraintEnd_toEndOf="@id/FoodItemGuideline"
+                app:typographyStyle="caption_small_demi_default"
+                android:gravity="center"
+                android:text="FoodItem meetings" />
+
+        <co.app.food.andromeda.text.AndromedaTextView
+                android:id="@+id/atv_target_amount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/halfHorizontalGuideline"
+                android:layout_marginTop="?attr/spacing_4x"
+                app:layout_constraintStart_toStartOf="@id/FoodItemGuideline"
+                app:layout_constraintEnd_toEndOf="@id/endEdgeGuideline"
+                app:typographyStyle="body_small_default"
+                android:gravity="center"
+                android:text="₹ 1,23,500" />
+
+        <co.app.food.andromeda.text.AndromedaTextView
+                android:id="@+id/atv_target_amount_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/atv_FoodItem_count_value"
+                android:layout_marginTop="?attr/spacing_x"
+                app:layout_constraintStart_toStartOf="@id/FoodItemGuideline"
+                app:layout_constraintEnd_toEndOf="@id/endEdgeGuideline"
+                app:typographyStyle="caption_small_demi_default"
+                android:gravity="center"
+                android:text="Target amount" />
+
+        <co.app.food.andromeda.text.AndromedaTextView
+                android:id="@+id/atv_cta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/spacing_10x"
+                android:background="?attr/fill_active_primary"
+                android:layout_marginTop="?attr/spacing_x"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:typographyStyle="caption_small_demi_default"
+                app:textColor="@color/white"
+                android:gravity="center"
+                android:text="FoodItem meetings" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
